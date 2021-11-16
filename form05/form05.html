@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+ 
+<head>
+  <meta charset="UTF-8">
+  <title>Form 05</title>
+</head>
+ 
+<body>
+  <h2>Información sobre el producto</h2>
+  
+  <form>
+    <fieldset>
+      <legend>Datos básicos</legend>
+      
+      Nombre
+      <br>
+      <input type="text" size="50">
+      <br>
+      <br>
+      
+      Descripción
+      <br>
+      <textarea cols="50" rows="5"></textarea>
+      <br>
+      <br>
+      
+      Foto
+      <input type="text" size="10">
+      <button formaction="#">Elegir...</button>
+      <br>
+      <br>
+      
+      <input type="checkbox">
+      Añadir contador de visitas
+    </fieldset>
+    
+    <fieldset>
+      <legend>Datos económicos</legend>
+      
+      Precio
+      <input type="text" size="4" maxlength="7">
+      €
+      Impuestos
+      <select>
+        <option>4%</option>
+        <option>7%</option>
+        <option>16%</option>
+        <option>25%</option>
+      </select>
+      <br>
+      <br>
+      
+      Promoción
+      <br>
+      <input type="radio" name="promocion" checked>Ninguno
+      <br>
+      <input type="radio" name="promocion">Transporte gratuito
+      <br>
+      <input type="radio" name="promocion">Descuento 5%
+      <br>
+    </fieldset>
+  </form>
+</body>
+</html>
