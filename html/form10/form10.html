@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+ 
+<head>
+  <meta charset="UTF-8">
+  <title>Form 10</title>
+  <style>
+    .header {
+      background-color: #3333FF;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 1.25rem;
+    }
+    
+    .red-bg {
+      background-color: #FF0000;
+    }
+    
+    .blue-bg {
+      background-color: #3333FF;
+    }
+    
+    .yellow-bg {
+      background-color: #FFFF00;
+    }
+    
+    .green-bg {
+      background-color: #00FF00;
+    }
+    
+    .orange-bg {
+      background-color: #FFA500;
+    }
+    
+    td.green-bg, td.blue-bg, td.yellow-bg, td.red-bg, td.orange-bg {
+      width: 80px;
+      height: 80px;
+      border: 1px solid #000000;
+    }
+    
+    .required-text {
+      color: #FF0000;
+    }
+    
+    .input-info-col {
+      width: 100px;
+    }
+    
+    legend {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <table border="1" style="border-collapse: collapse;">
+    <tr>
+      <td colspan="2" class="header">Daniel Moral Luque</td>
+    </tr>
+    
+    <tr>
+      <td>
+        <table style="height: 100%; border-collapse: collapse;">
+          <tr>
+            <td colspan="3" class="yellow-bg"a></td>
+            <td class="red-bg"></td>
+            <td rowspan="2" class="yellow-bg"></td>
+          </tr>
+          
+          <tr>
+            <td class="red-bg"></td>
+            <td class="blue-bg"></td>
+            <td class="green-bg"></td>
+            <td class="blue-bg"></td>
+          </tr>
+          
+          <tr>
+            <td rowspan="2" class="yellow-bg"></td>
+            <td class="orange-bg"></td>
+            <td colspan="2" class="red-bg"></td>
+            <td class="green-bg"></td>
+          </tr>
+          
+          <tr>
+            <td class="red-bg"></td>
+            <td class="blue-bg"></td>
+            <td class="green-bg"></td>
+            <td class="red-bg"></td>
+          </tr>
+          
+          <tr>
+            <td class="red-bg"></td>
+            <td class="green-bg"></td>
+            <td colspan="3" class="yellow-bg"></td>
+          </tr>
+        </table>
+      </td>
+      
+      <td>
+        <form>
+          <fieldset>
+            <legend>CONTACT DETAILS</legend>
+            
+            <table>
+              <tr>
+                <td class="input-info-col">
+                  Name<span class="required-text">*</span>
+                </td>
+                <td>
+                  <input type="text">
+                </td>
+              </tr>
+              
+              <tr class="input-info-col">
+                <td>
+                  Telephone
+                </td>
+                <td>
+                  <input type="text">
+                </td>
+              </tr>
+              
+              <tr>
+                <td class="input-info-col">
+                  Email<span class="required-text">*</span>
+                </td>
+                <td>
+                  <input type="text">
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+          
+          <fieldset>
+            <legend>PERSONAL INFORMATION</legend>
+            <table>
+              <tr>
+                <td class="input-info-col">
+                  Age<span class="required-text">*</span>
+                </td>
+                <td>
+                  <input type="text">
+                </td>
+             </tr>
+
+             <tr>
+                <td class="input-info-col">
+                  Gender
+                </td>
+                <td>
+                  <select style="width: 100%;">
+                    <option>Female</option>
+                    <option>Male</option>
+                  </select>
+                </td>
+             </tr>
+
+             <tr>
+                <td class="input-info-col">
+                  When did you first know you wanted to be a zoo-keeper?
+                </td>
+                <td>
+                  <textarea rows="7"></textarea>
+                </td>
+             </tr>
+           </table>
+          </fieldset>
+          
+          <fieldset>
+            <legend>PICK YOUR FAVORITE ANIMALS</legend>
+            
+            <table width="100%;">
+              <tr>
+                <td>
+                  <input type="checkbox">Zebra
+                </td>
+                
+                <td>
+                  <input type="checkbox">Cat
+                </td>
+                
+                <td>
+                  <input type="checkbox">Anaconda
+                
+                <td>
+                  <input type="checkbox">Human
+                </td>
+              </tr>
+              
+              <tr>
+                <td>
+                  <input type="checkbox">Elephant
+                </td>
+                
+                <td>
+                  <input type="checkbox">Wildebeest
+                </td>
+                
+                <td>
+                  <input type="checkbox">Pigeon
+                
+                <td>
+                  <input type="checkbox">Crab
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+          
+          <br>
+          <input type="submit">
+        </form>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
