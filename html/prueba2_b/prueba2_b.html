@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+ 
+<head>
+  <meta charset="UTF-8">
+  <title>Prueba 2 (B)</title>
+  <style>
+    .heading-row {
+      text-align: center;
+      background-color: #3333FF;
+      color: #FFFFFF;
+    }
+    
+    .footer-row {
+      background-color: #FFA500;
+      color: #FFFFFF;
+      text-decoration: underline;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    .footer-row > a {
+      color: #FFFFFF;
+    }
+    
+    .bold {
+      font-weight: bold;
+    }
+    
+    .table-content > td {
+      width: 50%;
+    }
+    
+    .animal-list-col {
+      padding: 10%;
+    }
+    
+    .animal-list li {
+      font-size: 1.5rem;
+      text-align: left;
+    }
+    
+    td {
+      padding: 2.5px;
+    }
+  </style>
+</head>
+
+<body>
+  <table border="1" style="border-collapse: collapse; width: 100%;">
+    <tr>
+      <td colspan="2" class="heading-row">Daniel Moral Luque</td>
+    </tr>
+    
+    <tr class="table-content">
+      <td>
+        <form>
+          <span class="bold">Select the pizza size:</span>
+          <br>
+          <input type="radio" name="size" checked>Big
+          <br>
+          <input type="radio" name="size">Medium
+          <br>
+          <input type="radio" name="size">Small
+          <br>
+          <br>
+          
+          <span class="bold">Select the crust type</span>
+          <br>
+          <select>
+            <option>Deep Dish</option>
+            <option>Deep Dish 1</option>
+            <option>Deep Dish 2</option>
+            <option>Deep Dish 3</option>
+          </select>
+          <br>
+          <br>
+          
+          <span class="bold">Select the filler:</span>
+          <br>
+          <input type="checkbox">Sausages
+          <br>
+          <input type="checkbox">Pepper
+          <br>
+          <input type="checkbox">Mushrooms
+          <br>
+          <br>
+          
+          <span class="bold">Name:</span>
+          <input type="text">
+          <br>
+          
+          <span class="bold">Phone:</span>
+          <input type="text">
+          <br>
+          
+          <textarea rows="4" cols="40">Message:</textarea>
+          <br>
+          <br>
+          
+          <span class="bold">Send your CV:</span>
+          <input type="text">
+          <input type="file">
+          <br>
+          <br>
+          
+          <input type="submit">
+          <input type="reset">
+        </form>
+      </td>
+      
+      <td class="animal-list-col">
+        <ol class="animal-list">
+          <li>Mamíferos</li>
+          <ul>
+            <li>Gato</li>
+            <li>Perro</li>
+            <li>Gato</li>
+          </ul>
+          
+          <li>Pájaros</li>
+          <ul>
+            <li>Paloma</li>
+            <li>Gorrión</li>
+          </ul>
+          
+          <li>Peces</li>
+          <ul>
+            <li>Tiburón</li>
+            <li>Sardina</li>
+            <li>Atún</li>
+          </ul>
+        </ol>
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="footer-row" colspan="2">
+        <a href="https://amazon.es">www.amazon.es</a>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
