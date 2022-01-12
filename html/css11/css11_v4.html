@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS11 v4</title>
+  <style>
+    div {
+      padding: 10px;
+      margin: 5px;
+      text-align: center;
+    }
+    
+    .dashed-box {
+      border-top: 3px dashed #00FF00;
+      border-left: 3px dashed #0000FF;
+      border-bottom: 3px dashed #FF0000;
+      border-right: 3px dashed #FFFF00;
+    }
+    
+    .solid-box {
+      border: 5px solid #000000;
+      border-top: 5px solid #4FC3F7;
+      border-bottom: 5px solid #FFC0CB;
+    }
+    
+    .black-border-box {
+      border: 2px solid #000000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="dashed-box">
+    Esta es una caja con diferentes tipos de bordes
+  </div>
+  
+  <div class="solid-box">
+    Esta es otra caja con diferentes tipos de bordes
+  </div>
+  
+  <div class="dashed-box">
+    <div class="solid-box">
+      Esta es una caja con diferentes tipos de bordes dentro de otra caja
+    </div>
+  </div>
+  
+  <div class="black-border-box">
+    <div class="black-border-box">
+      <div class="black-border-box">
+        <div class="black-border-box">
+          <div class="black-border-box">
+            <div class="black-border-box">
+              Estas son cajas dentro de cajas
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="dashed-box">
+    <div class="solid-box">
+      <div class="dashed-box">
+        <div class="solid-box">
+          <div class="dashed-box">
+            <div class="solid-box">
+            Esta son cajas con diferentes tipos de borde dentro de otras cajas
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
