@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 13</title>
+  <style>
+    .table-1 td {
+      padding: 15px 10px 15px 10px;
+      text-align: center;
+      border: 1px solid #FFFFFF;
+      border-collapse: collapse;
+    }
+    
+    .table-1 tr.section-row, .table-1 td.section-column {
+      color: #FFFFFF;
+      font-weight: bold;
+    }
+    
+    .table-1 tr.section-row > td:not(.invisible) {
+      background: linear-gradient(#a2dc2e, #8bc93a);
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px;
+    }
+    
+    .table-1 td.section-column {
+      background: linear-gradient(#a2dc2e, #8bc93a);
+      border-top-left-radius: 7px;
+      border-bottom-left-radius: 7px;
+    }
+    
+    .table-1 tr.plan-row > td:not(.section-column):not(.invisible) {
+      background-color: #e0f5ce;
+      font-weight: bold;
+      color: #72767b;
+    }
+    
+    .table-1 tr.price-row > td {
+      font-weight: bold;
+      color: #72767b;
+    }
+    
+    .green-tick {
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <table class="table-1">
+    <tr class="section-row">
+      <td class="invisible"></td>
+      
+      <td>
+        Smart Starter
+      </td>
+      
+      <td>
+        Smart Medium
+      </td>
+      
+      <td>
+        Smart Business
+      </td>
+      
+      <td>
+        Smart Deluxe
+      </td>
+    </tr>
+    
+    <tr class="plan-row">
+      <td class="section-column">
+        Storage Space
+      </td>
+      
+      <td>
+        512 MB
+      </td>
+      
+      <td>
+        1 GB
+      </td>
+      
+      <td>
+        2 GB
+      </td>
+      
+      <td>
+        4GB
+      </td>
+    </tr>
+    
+    <tr class="plan-row">
+      <td class="section-column">
+        Bandwidth
+      </td>
+      
+      <td>
+        50 GB
+      </td>
+      
+      <td>
+        100 GB
+      </td>
+      
+      <td>
+        150 GB
+      </td>
+      
+      <td>
+        Unlimited
+      </td>
+    </tr>
+    
+    <tr class="plan-row">
+      <td class="section-column">
+        MySQL Databases
+      </td>
+      
+      <td>
+        Unlimited
+      </td>
+      
+      <td>
+        Unlimited
+      </td>
+      
+      <td>
+        Unlimited
+      </td>
+      
+      <td>
+        Unlimited
+      </td>
+    </tr>
+    
+    <tr class="plan-row">
+      <td class="section-column">
+        Setup
+      </td>
+      
+      <td>
+        19.90 $
+      </td>
+      
+      <td>
+        12.90 $
+      </td>
+      
+      <td>
+        free
+      </td>
+      
+      <td>
+        free
+      </td>
+    </tr>
+    
+    <tr class="plan-row">
+      <td class="section-column">
+        PHP 5
+      </td>
+      
+      <td>
+        <img class="green-tick" src="https://raw.githubusercontent.com/daniml3/school/main/html/check-tick-icon-14146.png">
+      </td>
+      
+      <td>
+        <img class="green-tick" src="https://raw.githubusercontent.com/daniml3/school/main/html/check-tick-icon-14146.png">
+      </td>
+      
+      <td>
+        <img class="green-tick" src="https://raw.githubusercontent.com/daniml3/school/main/html/check-tick-icon-14146.png">
+      </td>
+      
+      <td>
+        <img class="green-tick" src="https://raw.githubusercontent.com/daniml3/school/main/html/check-tick-icon-14146.png">
+      </td>
+    </tr>
+    
+    <tr class="plan-row">
+      <td class="section-column">
+        Ruby on Rails
+      </td>
+      
+      <td>
+        <img class="green-tick" src="https://raw.githubusercontent.com/daniml3/school/main/html/check-tick-icon-14146.png">
+      </td>
+      
+      <td>
+        <img class="green-tick" src="https://raw.githubusercontent.com/daniml3/school/main/html/check-tick-icon-14146.png">
+      </td>
+      
+      <td>
+        <img class="green-tick" src="https://raw.githubusercontent.com/daniml3/school/main/html/check-tick-icon-14146.png">
+      </td>
+      
+      <td>
+        <img class="green-tick" src="../check-tick-icon-14146.png">
+      </td>
+    </tr>
+    
+    <tr class="price-row">
+      <td>
+        Price per month
+      </td>
+      
+      <td>
+        $ 2.90
+      </td>
+      
+      <td>
+        $ 5.90
+      </td>
+      
+      <td>
+        $ 9.90
+      </td>
+      
+      <td>
+       $ 14.90
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
