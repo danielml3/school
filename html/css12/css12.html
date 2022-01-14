@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 12</title>
+  <style>
+    table {
+      margin: 20px;
+    }
+    
+    .table-1 td {
+      width: 125px;
+      height: 25px;
+      padding: 10px;
+    }
+    
+    .table-1, .table-1 th, .table-1 td {
+      border: 2px solid #CCCCCC;
+      border-collapse: collapse;
+    }
+    
+    .table-1 tr:first-child {
+      font-weight: bold;
+      background-color: #EEEEEE;
+    }
+    
+    .table-1 tr:not(:first-child) {
+      background-color: #FFF9AE;
+    }
+    
+    .table-2 td, .table-3 td {
+      width: 175px;
+      height: 25px;
+      padding: 10px;
+    }
+    
+    .table-2, .table-2 th, .table-2 td {
+      border: 1px dashed #000000;
+      border-collapse: collapse;
+    }
+    
+    .table-2 tr:first-child, .table-3 tr:first-child {
+      font-weight: bold;
+    }
+    
+    .table-3, .table-3 th, .table-3 td {
+      border: 2px dashed #A0DAAA;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    
+    .table-3 tr:not(:first-child) {
+        background-color: #C0FCCC;
+    }
+  </style>
+</head>
+
+<body>
+  <table class="table-1">
+    <caption>TABLE THREE</caption>
+    <tr>
+      <td>
+        NAME
+      </td>
+      
+      <td>
+        SURNAME
+      </td>
+      
+      <td>
+        AGE
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        Fabio
+      </td>
+      
+      <td>
+        Cimo
+      </td>
+      
+      <td>
+        20
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        Jasmin
+      </td>
+      
+      <td>
+        Brown
+      </td>
+      
+      <td>
+        18
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        James
+      </td>
+      
+      <td>
+        Wick
+      </td>
+      
+      <td>
+        35
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        Donald
+      </td>
+      
+      <td>
+        Dawn
+      </td>
+      
+      <td>
+        29
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        Maggie
+      </td>
+      
+      <td>
+        Grace
+      </td>
+      
+      <td>
+        15
+      </td>
+    </tr>
+  </table>
+  
+  <table class="table-2">
+    <caption>TABLE FOUR</caption>
+    <tr>
+      <td colspan="2">
+        FULL NAME
+      </td>
+      
+      <td>
+        AGE
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        Fabio
+      </td>
+      
+      <td>
+        Cimo
+      </td>
+      
+      <td>
+        20
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        Jasmin
+      </td>
+      
+      <td>
+        Brown
+      </td>
+      
+      <td>
+        18
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        James
+      </td>
+      
+      <td>
+        Wick
+      </td>
+      
+      <td>
+        35
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        Donald
+      </td>
+      
+      <td>
+        Dawn
+      </td>
+      
+      <td>
+        29
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        Maggie
+      </td>
+      
+      <td>
+        Grace
+      </td>
+      
+      <td>
+        15
+      </td>
+    </tr>
+  </table>
+  
+   <table class="table-3">
+     <caption>TABLE FIVE</caption>
+    <tr>
+      <td>
+        NAME
+      </td>
+      
+      <td>
+        SURNAME
+      </td>
+      
+      <td>
+        AGE
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        Fabio
+      </td>
+      
+      <td>
+        Cimo
+      </td>
+      
+      <td>
+        20
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        Jasmin
+      </td>
+      
+      <td>
+        Brown
+      </td>
+      
+      <td>
+        18
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        James
+      </td>
+      
+      <td>
+        Wick
+      </td>
+      
+      <td>
+        35
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        Donald
+      </td>
+      
+      <td>
+        Dawn
+      </td>
+      
+      <td>
+        29
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        Maggie
+      </td>
+      
+      <td>
+        Grace
+      </td>
+      
+      <td>
+        15
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
