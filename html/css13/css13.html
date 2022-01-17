@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <title>CSS 13</title>
   <style>
+    table {
+      margin: 20px;
+    }
+    
+    td {
+      padding: 5px;
+    }
+    
     .table-1 td {
       padding: 15px 10px 15px 10px;
       text-align: center;
@@ -69,6 +77,14 @@
       font-weight: bold;
     }
     
+    .table-2 td.section-column, .table-2 td.price-section-column {
+          text-align: right;
+    }
+    
+    .table-2 td.price-section-column {
+      font-weight: nold;
+    }
+    
     .table-2 tr.section-row > td:nth-child(2), .table-2 tr.price-row > td:nth-child(2) {
       background-color: #86d5fe;
     }
@@ -110,6 +126,51 @@
       width: 25px;
       height: 25px;
     }
+    
+    .table-3 {
+      text-transform: uppercase;
+      border-collapse: collapse;
+      border-radius: 5px;
+    }
+    
+    .table-3 td:not(.section-column):not(.invisible):not(.price-section-column) {
+      padding: 15px 10px 15px 10px;
+      text-align: center;
+      border-left: 0.1px solid #333333;
+      border-right: 0.1px solid #333333;
+    }
+    
+    .table-3 tr.section-row {
+      color: #FFFFFF;
+    }
+    
+    .table-3 tr.section-row > td:not(.invisible), .table-3 tr.price-row > td:not(.price-section-column) {
+      background-color: #111111;
+    }
+    
+    .table-3 td.section-column {
+      background-color: #F1F1F1;
+      color: #333333;
+      font-weight: bold;
+      text-align: right;
+    }
+    
+    .table-3 td.price-section-column {
+      color: #333333;
+      text-align: center;
+    }
+    
+    .table-3 tr.plan-row > td:not(.section-column) {
+      background: #E9E9E9;
+      color: #555555;
+    }
+    
+    .table-3 tr.price-row > td:not(.price-section-column) {
+      color: #d57f1e;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    
   </style>
 </head>
 
@@ -409,15 +470,15 @@
       </td>
       
       <td>
-        <img class="blue-tick" src="../check-tick-icon-14146.png">
+        <img class="blue-tick" src="../blue-tick.png">
       </td>
       
       <td>
-        <img class="blue-tick" src="../check-tick-icon-14146.png">
+        <img class="blue-tick" src="../blue-tick.png">
       </td>
       
       <td>
-        <img class="blue-tick" src="../check-tick-icon-14146.png">
+        <img class="blue-tick" src="../blue-tick.png">
       </td>
     </tr>
     
@@ -440,6 +501,182 @@
       
       <td>
         <img class="green-tick" src="../blue-tick.png">
+      </td>
+    </tr>
+    
+    <tr class="price-row">
+      <td class="price-section-column">
+        Price per month
+      </td>
+      
+      <td>
+        $ 2.90
+      </td>
+      
+      <td>
+        $ 5.90
+      </td>
+      
+      <td>
+        $ 9.90
+      </td>
+      
+      <td>
+       $ 14.90
+      </td>
+    </tr>
+  </table>
+  
+  <table class="table-3">
+    <tr class="section-row">
+      <td class="invisible"></td>
+      
+      <td>
+        Smart Starter
+      </td>
+      
+      <td>
+        Smart Medium
+      </td>
+      
+      <td>
+        Smart Business
+      </td>
+      
+      <td>
+        Smart Deluxe
+      </td>
+    </tr>
+    
+    <tr class="plan-row">
+      <td class="section-column">
+        Storage Space
+      </td>
+      
+      <td>
+        512 MB
+      </td>
+      
+      <td>
+        1 GB
+      </td>
+      
+      <td>
+        2 GB
+      </td>
+      
+      <td>
+        4GB
+      </td>
+    </tr>
+    
+    <tr class="plan-row">
+      <td class="section-column">
+        Bandwidth
+      </td>
+      
+      <td>
+        50 GB
+      </td>
+      
+      <td>
+        100 GB
+      </td>
+      
+      <td>
+        150 GB
+      </td>
+      
+      <td>
+        Unlimited
+      </td>
+    </tr>
+    
+    <tr class="plan-row">
+      <td class="section-column">
+        MySQL Databases
+      </td>
+      
+      <td>
+        Unlimited
+      </td>
+      
+      <td>
+        Unlimited
+      </td>
+      
+      <td>
+        Unlimited
+      </td>
+      
+      <td>
+        Unlimited
+      </td>
+    </tr>
+    
+    <tr class="plan-row setup-row">
+      <td class="section-column">
+        Setup
+      </td>
+      
+      <td>
+        19.90 $
+      </td>
+      
+      <td>
+        12.90 $
+      </td>
+      
+      <td>
+        free
+      </td>
+      
+      <td>
+        free
+      </td>
+    </tr>
+    
+    <tr class="plan-row">
+      <td class="section-column">
+        PHP 5
+      </td>
+      
+      <td>
+        <img class="blue-tick" src="../check-tick-icon-14146.png">
+      </td>
+      
+      <td>
+        <img class="blue-tick" src="../check-tick-icon-14146.png">
+      </td>
+      
+      <td>
+        <img class="blue-tick" src="../check-tick-icon-14146.png">
+      </td>
+      
+      <td>
+        <img class="blue-tick" src="../check-tick-icon-14146.png">
+      </td>
+    </tr>
+    
+    <tr class="plan-row">
+      <td class="section-column">
+        Ruby on Rails
+      </td>
+      
+      <td>
+        <img class="green-tick" src="../check-tick-icon-14146.png">
+      </td>
+      
+      <td>
+        <img class="green-tick" src="../check-tick-icon-14146.png">
+      </td>
+      
+      <td>
+        <img class="green-tick" src="../check-tick-icon-14146.png">
+      </td>
+      
+      <td>
+        <img class="green-tick" src="../check-tick-icon-14146.png">
       </td>
     </tr>
     
