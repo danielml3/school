@@ -35,12 +35,12 @@
       color: #72767b;
     }
     
-    .table-1 td.price-section-row {
+    .table-1 td.price-section-column {
       font-weight: bold;
       color: #72767b;
     }
     
-    .table-1 tr.price-row > td:not(.price-section-row) {
+    .table-1 tr.price-row > td:not(.price-section-column) {
       color: #8bc93a;
       font-size: 26px;
       font-weight: bold;
@@ -49,6 +49,66 @@
     .green-tick {
       width: 30px;
       height: 30px;
+    }
+    
+    .table-2 {
+      text-transform: uppercase;
+      border-collapse: collapse;
+      border-radius: 5px;
+    }
+    
+    .table-2 td:not(.section-column):not(.invisible):not(.price-section-column) {
+      padding: 15px 10px 15px 10px;
+      text-align: center;
+      border: 0.1px solid #333333;
+    }
+    
+    
+    .table-2 tr.section-row, .table-2 td.section-column {
+      color: #333333;
+      font-weight: bold;
+    }
+    
+    .table-2 tr.section-row > td:nth-child(2), .table-2 tr.price-row > td:nth-child(2) {
+      background-color: #86d5fe;
+    }
+    
+    .table-2 tr.section-row > td:nth-child(3), .table-2 tr.price-row > td:nth-child(3) {
+      background-color: #4cade2;
+    }
+    
+    .table-2 tr.section-row > td:nth-child(4), .table-2 tr.price-row > td:nth-child(4) {
+      background-color: #298dc3;
+    }
+    
+    .table-2 tr.section-row > td:nth-child(5), .table-2 tr.price-row > td:nth-child(5) {
+      background-color: #0b70a4;
+    }
+    
+    .table-2 tr.plan-row > td:not(.section-column):nth-child(even) {
+      background: linear-gradient(#e1e1e1, #c3c3c3);
+      color: #555555;
+    }
+    
+    .table-2 tr.plan-row > td:not(.section-column):nth-child(odd) {
+      background: linear-gradient(#6f6e6f, #565656);
+      color: #FFFFFF;
+    }
+    
+    .table-2 tr.price-row > td:not(.price-section-column) {
+      color: #000000;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    
+    .table-2 tr.setup-row > td:not(.section-column) {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    
+    .blue-tick {
+      width: 25px;
+      height: 25px;
     }
   </style>
 </head>
@@ -208,7 +268,183 @@
     </tr>
     
     <tr class="price-row">
-      <td class="price-section-row">
+      <td class="price-section-column">
+        Price per month
+      </td>
+      
+      <td>
+        $ 2.90
+      </td>
+      
+      <td>
+        $ 5.90
+      </td>
+      
+      <td>
+        $ 9.90
+      </td>
+      
+      <td>
+       $ 14.90
+      </td>
+    </tr>
+  </table>
+  
+  <table class="table-2">
+    <tr class="section-row">
+      <td class="invisible"></td>
+      
+      <td>
+        Smart Starter
+      </td>
+      
+      <td>
+        Smart Medium
+      </td>
+      
+      <td>
+        Smart Business
+      </td>
+      
+      <td>
+        Smart Deluxe
+      </td>
+    </tr>
+    
+    <tr class="plan-row">
+      <td class="section-column">
+        Storage Space
+      </td>
+      
+      <td>
+        512 MB
+      </td>
+      
+      <td>
+        1 GB
+      </td>
+      
+      <td>
+        2 GB
+      </td>
+      
+      <td>
+        4GB
+      </td>
+    </tr>
+    
+    <tr class="plan-row">
+      <td class="section-column">
+        Bandwidth
+      </td>
+      
+      <td>
+        50 GB
+      </td>
+      
+      <td>
+        100 GB
+      </td>
+      
+      <td>
+        150 GB
+      </td>
+      
+      <td>
+        Unlimited
+      </td>
+    </tr>
+    
+    <tr class="plan-row">
+      <td class="section-column">
+        MySQL Databases
+      </td>
+      
+      <td>
+        Unlimited
+      </td>
+      
+      <td>
+        Unlimited
+      </td>
+      
+      <td>
+        Unlimited
+      </td>
+      
+      <td>
+        Unlimited
+      </td>
+    </tr>
+    
+    <tr class="plan-row setup-row">
+      <td class="section-column">
+        Setup
+      </td>
+      
+      <td>
+        19.90 $
+      </td>
+      
+      <td>
+        12.90 $
+      </td>
+      
+      <td>
+        free
+      </td>
+      
+      <td>
+        free
+      </td>
+    </tr>
+    
+    <tr class="plan-row">
+      <td class="section-column">
+        PHP 5
+      </td>
+      
+      <td>
+        <img class="blue-tick" src="../check-tick-icon-14146.png">
+      </td>
+      
+      <td>
+        <img class="blue-tick" src="../check-tick-icon-14146.png">
+      </td>
+      
+      <td>
+        <img class="blue-tick" src="../check-tick-icon-14146.png">
+      </td>
+      
+      <td>
+        <img class="blue-tick" src="../check-tick-icon-14146.png">
+      </td>
+    </tr>
+    
+    <tr class="plan-row">
+      <td class="section-column">
+        Ruby on Rails
+      </td>
+      
+      <td>
+        <img class="green-tick" src="../blue-tick.png">
+      </td>
+      
+      <td>
+        <img class="green-tick" src="../blue-tick.png">
+      </td>
+      
+      <td>
+        <img class="green-tick" src="../blue-tick.png">
+      </td>
+      
+      <td>
+        <img class="green-tick" src="../blue-tick.png">
+      </td>
+    </tr>
+    
+    <tr class="price-row">
+      <td class="price-section-column">
         Price per month
       </td>
       
