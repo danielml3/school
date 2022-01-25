@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda - Soporte</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="store-name">
+      Tienda
+    </div>
+
+    <div class="header-menu">
+      <button class="header-button" onclick="location.href='index.html'">
+        Página principal
+      </button>
+
+      <button class="header-button" onclick="location.href='products.html'">
+        Productos
+      </button>
+
+      <button class="header-button" onclick="location.href='support.html'">
+        Soporte
+      </button>
+    </div>
+  </div>
+
+  <div class="main-container">    
+    <form action="mailto:suporte@tienda.es" method="get" enctype="text/plain">
+      <table class="contact-form">
+        <tr>
+          <td>
+            Código del pedido
+          </td>
+
+          <td>
+            <input type="text" name="subject">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Descripción del problema*
+          </td>
+
+          <td>
+            <textarea rows="5" cols="40" name="body"></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <hr>
+            <br>
+            <input type="submit">
+            <input type="reset">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
