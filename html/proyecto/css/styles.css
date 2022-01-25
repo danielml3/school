@@ -1,0 +1,151 @@
+body {
+  margin: 0px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  transition: all ease-in-out 0.25s;
+  transform: scale(1.0);
+  border-radius: 10px;
+}
+
+img:hover {
+  transform: scale(1.025);
+  transition: all ease-in-out 0.25s;
+}
+
+.linked:hover, button:hover {
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  background-color: #2785e3;
+}
+
+.header, .header > * {
+  top: 50%;
+  display: inline-block;
+}
+
+.store-name {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+  color: #FFFFFF;
+  cursor:  default;
+}
+
+.header-menu {
+  padding: 10px;
+  float: right;
+}
+
+.header-button, input[type=submit], input[type=reset] {
+  border-radius: 10px;
+  border: 0px solid #00000000;
+  background-color: #FFFFFF;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.header-button:hover, input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #EEEEEE;
+  cursor:  pointer;
+}
+
+input[type="text"], textarea {
+  border: 1px solid #000000;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.main-container {
+  text-align: center;
+}
+
+.main-container > * {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.main-image {
+  margin: 10px;
+  width: 40%;
+}
+
+.timetable {
+  background-color: #F1F1F1;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.timetable td {
+  padding: 10px;
+}
+
+p.our-location {
+  background-color: #F1F1F1;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width:  50%;
+}
+
+.product-table {
+  margin: 20px;
+  max-width: 75%;
+}
+
+.product-table img {
+  width: 250px;
+}
+
+.product-table tr {
+  background-color: #F1F1F1;
+}
+
+.product-table td {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.product-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.product-price {
+  font-size:  30px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.strikethrough-price {
+  text-decoration: line-through;
+  color:  #333333;
+}
+
+.contact-form {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F1F1F1;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.contact-form td {
+  padding: 15px;
+  font-weight:  bold;
+  font-size: 18px;
+}
